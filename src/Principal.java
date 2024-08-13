@@ -1,15 +1,47 @@
+import br.com.alura.audio.Musica;
+import br.com.alura.audio.PodCast;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class Principal {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Musica musica = new Musica();
+        musica.setTitulo("Would?");
+        musica.setArtista("Alice in Chains");
+        musica.setLetra("""
+            Know me broken
+            Teach thee on child, love of hereafter
+            
+            Into the floop again...
+        """);
+        musica.setDuracaoMinutos(3);
+        musica.curtirAudio();
+        musica.curtirAudio();
+        musica.curtirAudio();
+        musica.reproduzirAudio();
+        musica.reproduzirAudio();
+        musica.listaAudio();
+        System.out.println("Classificação: " + musica.getClassificacao());
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.println("""
+                
+                
+                """);
+
+        PodCast podCast = new PodCast();
+        podCast.setTitulo("Café com Tech!");
+        podCast.setApresentador("DanielDev");
+        podCast.setDuracaoMinutos(14);
+        podCast.setConteudo("Está o ar seu podCast Café com Tech! Tudo o que precisa saber sobre o mercado de tecnologia.");
+        podCast.curtirAudio();
+        podCast.curtirAudio();
+        podCast.reproduzirAudio();
+        podCast.reproduzirAudio();
+        podCast.reproduzirAudio();
+        podCast.reproduzirAudio();
+        podCast.reproduzirAudio();
+        podCast.listaAudio();
+        System.out.println("Classificação: " + podCast.getClassificacao());
+
     }
 }
