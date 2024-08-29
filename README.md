@@ -5,9 +5,6 @@
 
 Este é um repositório criado para estudos sobre programação Java.
 
-## 🔗 Link de Acesso
-- Deploy: [clique aqui!](https://pocketguard.vercel.app/);
-
 ## 👥 Equipe
 | [<img src="https://avatars.githubusercontent.com/u/111311678?v=4" width=115><br><sub>Daniel Emidio</sub>](https://github.com/DanielEmidio1988) |
 | :---: |
